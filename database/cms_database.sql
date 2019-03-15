@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: cms_portfolio
-# Generation Time: 2019-03-15 15:30:55 +0000
+# Generation Time: 2019-03-15 16:11:01 +0000
 # ************************************************************
 
 
@@ -27,12 +27,23 @@ DROP TABLE IF EXISTS `projects`;
 
 CREATE TABLE `projects` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `project_title` varchar(255) NOT NULL DEFAULT '',
-  `img_url` varchar(255) NOT NULL DEFAULT '',
-  `site_url` varchar(255) DEFAULT NULL,
+  `project_title` varchar(255) NOT NULL DEFAULT '' COMMENT 'this is for dev reference',
+  `img_url` varchar(283) NOT NULL DEFAULT '',
+  `site_url` varchar(283) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `projects` WRITE;
+/*!40000 ALTER TABLE `projects` DISABLE KEYS */;
+
+INSERT INTO `projects` (`id`, `project_title`, `img_url`, `site_url`)
+VALUES
+	(1,'Pilot Shop','file:///Users/alicemcneil/Desktop/Screen%20Shot%202019-03-15%20at%2015.42.59.png','file:///Users/alicemcneil/Desktop/code/Pilot-Shop/pilotshop.html'),
+	(2,'Mayden Logo','file:///Users/alicemcneil/Desktop/mayden-logo.jpg','file:///Users/alicemcneil/Desktop/code/mayden-logo/maydenlogo.html'),
+	(3,'Rocketmakers Merch','file:///sites/academy-php7/html/portfolio-cms/images/merch.png',NULL);
+
+/*!40000 ALTER TABLE `projects` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 
