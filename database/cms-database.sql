@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: cms_portfolio
-# Generation Time: 2019-03-15 16:11:01 +0000
+# Generation Time: 2019-03-15 16:45:04 +0000
 # ************************************************************
 
 
@@ -28,8 +28,8 @@ DROP TABLE IF EXISTS `projects`;
 CREATE TABLE `projects` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `project_title` varchar(255) NOT NULL DEFAULT '' COMMENT 'this is for dev reference',
-  `img_url` varchar(283) NOT NULL DEFAULT '',
-  `site_url` varchar(283) DEFAULT NULL,
+  `img_url` varchar(2083) NOT NULL DEFAULT '',
+  `site_url` varchar(2083) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
