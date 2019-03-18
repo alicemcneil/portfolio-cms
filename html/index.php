@@ -66,13 +66,16 @@ $results = $query->fetchAll();
         <div class="image-container">
 
         <?php
+        $projects = [];
+        echo '<img src="' . $result['img_url'] . '" alt="project image"  class="';
         foreach ($results as $result) {
-            if ($result['id'] == 1 || $result['id'] == 4 || $result['id'] == 7) {
-                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image1">';
+            if ($result['id'] == 1 || $result['id'] % 3 ) {
+                echo 'image1';
             } else {
-                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image2">';
+                echo 'image2';
             }
         }
+        echo '">';
       ?>
 
        </div>
