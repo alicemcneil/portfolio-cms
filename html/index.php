@@ -1,3 +1,17 @@
+<?php
+$db = new PDO('mysql:host=192.168.20.20;dbname=cms_portfolio', 'root', '');
+$db-> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+$getImg = 'SELECT `img_url` , `id` FROM `projects`;';
+$query = $db->prepare($getImg);
+$query->execute();
+
+$getImg = array();
+
+$results = $query->fetchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,22 +63,28 @@
                 <h3 class="portfolio-title">Here's some of my projects</h3>
             </div>
 
-                <div class="image-container">
-                    <img src="../images/merch.png" alt="rocketmakers merch" class="image1">
-                    <img src="../images/pilotscreenshot.png" alt="pilotshop webpage" class="image2">
-                    <img src="../images/mayden.png" alt="mayden academy logo" class="image2">
-                    <a name="contact" class="contact-link"></a>
-                </div>
+        <div class="image-container">
 
+        <?php
+        $projects = [];
+        echo '<img src="' . $result['img_url'] . '" alt="project image"  class="';
+        foreach ($results as $result) {
+            if ($result['id'] == 1 || $result['id'] % 3 ) {
+                echo 'image1';
+            } else {
+                echo 'image2';
+            }
+        }
+        echo '">';
+      ?>
 
-
-
-        <div class="contact-section">
+       </div>
+        
+        <div class="contact-section" id="contact">
             <h3>Contact me</h3>
             <p class="get-in-touch">Well you've made it this far, you may as well get in touch with me.</p>
             <a href="mailto:alicemcneil@live.co.uk" class="email">EMAIL: alicemcneil@live.co.uk</a>
         </div>
-
 
         <div class="social-media">
             <a href="https://github.com/alicemcneil">
