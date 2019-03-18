@@ -1,0 +1,565 @@
+/*    GENERAL    */
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Heebo Black', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: url("../images/teal.png");
+    color: white;
+    position: relative;
+    overflow: auto;
+    font-size: 62%;
+}
+
+.container {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+    max-width: 1200px; /* 2 */
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+a:hover {
+    color: #2b7a78;
+    transition: 1s;
+}
+
+
+/*    LEFT TRIANGLE   */
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 400px solid transparent;
+    border-top: 400px solid #2b7a78;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.square {
+    width: 75%;
+    height: 70%;
+    background-color: #2b7a78;
+    transform: rotate(45deg);
+    margin-left: -1000px;
+    margin-top: -800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    z-index:6;
+}
+
+.logo {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: 40px;
+    width: 250px;
+}
+
+
+
+/*   NAVBAR   */
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    padding: 30px 25px;
+    margin-top: -10px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar a {
+    padding-right: 25px;
+    font-size: 1rem;
+}
+
+/*   MAIN HEAD  */
+
+.overflow {
+    overflow: auto;
+}
+
+h2 {
+    color: #2b7a78;
+    letter-spacing: 10px;
+    margin-top: 300px;
+    text-align: right;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size:10rem;
+    letter-spacing: 40px;
+    z-index: 20;
+    text-align: center;
+}
+
+
+/*    TOP SECTION    */
+
+.profile-pic {
+    background-color: #def2f1;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 130px;
+}
+
+.me-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%); /*check this for browser support (webkit?)*/
+    display: inline-block;
+    z-index: 4;
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+h3 + p {
+    text-transform: none;
+    text-align: left;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.about-me h3 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.about-me {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    display: inline;
+}
+
+/*   MY WORK SECTION   */
+
+.my-work {
+    text-align: center;
+}
+
+
+.portfolio-title {
+    background-color: #2b7a78;
+    display: inline-block;
+    padding: 30px 65px;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+/*    BACKGROUND BOXES     */
+
+
+.image-container {
+    height: 700px;
+    z-index: 10;
+    filter: grayscale(100%); /*check this for browser support (webkit?)*/
+    text-align: center;
+}
+
+.image1 {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.image2 {
+    height: 50%;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.image1:hover {
+    /*-webkit-transform: scale(1.3);*/
+    /*-ms-transform: scale(1.3);*/
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.image2:hover {
+    /*-webkit-transform: scale(1.3);*/
+    /*-ms-transform: scale(1.3);*/
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+
+/*  CONTACT SECTION  */
+
+.contact-link {
+
+}
+
+.contact-section {
+    display: block;
+    margin-top: 400px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-section h3 {
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    letter-spacing: 10px;
+}
+
+.contact-section p {
+    text-transform: none;
+    font-size: 1.2rem;
+}
+
+.contact-section p + p {
+    color:  #2b7a78;
+}
+
+.get-in-touch {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.email {
+    font-size: 1rem;
+    text-transform: none;
+    color: #2b7a78;
+}
+
+.email:hover {
+    background-color: #2b7a78;
+    padding: 10px 20px;
+    color: #f8f8f8;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height:50px;
+    margin-left: 100px;
+    z-index: 50;
+    position: relative;
+}
+
+.icon:hover {
+    background-color: #2b7a78 ;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.github {
+    margin-left: 0;
+}
+
+.bottom-triangle {
+    width: 0;
+    height: 0;
+    border-left: 800px solid transparent;
+    border-bottom: 300px solid #2b7a78;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+}
+
+ /*     ------ MEDIA QUERIES ------- */
+
+@media only screen and (max-width: 1500px) {
+    .container {
+        max-width: 1000px;
+    }
+    h1 {
+        font-size: 6rem;
+        text-align: center;
+    }
+    .logo {
+        width: 170px;
+        margin-left: -10px;
+    }
+    /*.square {*/
+        /*display: none;*/
+    /*}*/
+    .about-me p {
+        width: 93%;
+        font-size: 0.9rem;
+    }
+    .my-work {
+        margin-top: 150px;
+    }
+    .social-media {
+        margin-bottom: 200px;
+    }
+    .bottom-triangle {
+        top: 2400px;
+    }
+    .project-link {
+        margin-top: -500px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .logo .square {
+        position: fixed;
+    }
+    h2 {
+        font-size: 1.5rem;
+        padding-right: 50px;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-left: 200px;
+    }
+    .about-me h3 {
+        font-size: 1.5rem;
+        margin-right: 100px;
+    }
+    .about-me p {
+        font-size: 1rem;
+        width: 95%;
+    }
+    .profile-pic {
+        margin-left: 10px;
+        padding-bottom: 100px;
+    }
+    .width {
+        width: 1000px;
+    }
+    .bottom-triangle {
+       border-left: 800px solid transparent;
+       border-bottom: 400px solid #2b7a78;
+        top: 2200px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    h2 {
+        margin-left: 00px;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-left: 150px;
+    }
+    .me-pic {
+        height: 150px;
+        width: 150px;
+    }
+    .profile-pic {
+        height: 150px;
+        width: 150px;
+        margin-right: 100px;
+        margin-bottom: 120px;
+    }
+    .top-section {
+        margin-left: 10px;
+    }
+    .icon {
+        margin-left: 50px;
+    }
+    .image-container {
+        height: 500px;
+    }
+    .bottom-triangle {
+        top: 2000px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 1000px;
+    }
+    .navbar a {
+        font-size: 0.8rem;
+        padding-right: 6px;
+    }
+    h2 {
+        margin-left: 0;
+    }
+    h1 {
+        letter-spacing: 20px;
+        margin-left: 120px;
+    }
+    .image-container {
+        margin: auto;
+    }
+    .image1, .image2 {
+        float: none;
+        width: auto;
+        margin: 10px;
+    }
+    .triangle {
+        margin-top: -60px;
+    }
+    .about-me h3 {
+        margin-top: 150px;
+        margin-right: 0;
+    }
+    .about-me p {
+        margin-top: 20px;
+    }
+    .profile-pic {
+        margin-bottom: 60px;
+    }
+    .my-work {
+        margin-top: 150px;
+    }
+    .contact-section {
+        margin-top: 700px;
+        margin-bottom: 100px;
+    }
+    .project-link {
+        margin-top: 2px;
+    }
+    .bottom-triangle {
+        width: 900px;
+        height: 300px;
+        background-color: #2b7a78;
+        top: 2630px;
+    }
+    .contact-link {
+        margin-bottom: 200px;
+    }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        padding-left: 0;
+        margin-left:10px;
+        font-size: 2.4rem;
+    }
+    h2 {
+        margin-left: 20px;
+        padding-top: 10px;
+        margin-top: 250px;
+    }
+   .about-me h3 {
+       display: inline-block;
+       margin-bottom: 0;
+       margin-right: 0;
+       margin-top: 50px;
+   }
+   .about-me p {
+       margin-top: 15px;
+       font-size: 0.9rem;
+       margin-bottom: 200px;
+   }
+   .profile-pic {
+       margin-bottom: 30px;
+       margin-left: 40px;
+       margin-top: 10px;
+   }
+    .logo {
+        display: none;
+    }
+    .triangle {
+        margin-top: -200px;
+    }
+    .top-section {
+        padding: 0;
+    }
+    .icon {
+        width: 35px;
+        height:35px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .bottom-triangle {
+        border: none;
+        width: 900px;
+        height: 800px;
+        background-color: #2b7a78;
+        top: 2650px;
+    }
+}
+
+
+@media  only screen and (max-width: 515px){
+    .bottom-triangle {
+        top: 2728px;
+        width:
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        letter-spacing: 10px;
+    }
+    h2 {
+        padding-right: 0;
+        margin-top: 200px;
+    }
+    .profile-pic {
+        margin-left: 40px;
+    }
+    .navbar {
+        z-index: 50;
+    }
+    .about-me p {
+        margin-bottom: 80px;
+    }
+    .bottom-triangle {
+        margin-top: 60px;
+        height: 400px;
+    }
+    .my-work {
+        margin-top: 10px;
+    }
+    .project-link {
+        margin-top: -45px;
+    }
+    .contact-link {
+        margin-top: 591px;
+    }
+}
+
+
+
+
+
+
