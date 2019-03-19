@@ -24,12 +24,12 @@ foreach ($projects as $project) {
 <td>' . $project['project_title'] . '</td>
 <td>' . $project['img_url'] . '</td>
 <td>' . $project['site_url'] . '</td>
-<td><input type="submit" value="Edit" class="edit"></td>
+<td><a href="../edit/edit.php"><input type="submit" value="Edit" class="edit"></a></td>
 <td><input type="submit" value="Delete" class="delete"></td>
 </tr>';
 };
+echo '</table>';
 
-?>
-</table>
+
 
 

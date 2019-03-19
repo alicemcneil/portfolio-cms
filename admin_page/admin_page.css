@@ -32,6 +32,7 @@ input[type=submit] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .delete {
@@ -39,13 +40,13 @@ input[type=submit] {
 }
 
 .edit {
-    background-color: #4CAF50; /* Green */
+    background-color: #2b7a78; /* Green */
 }
 
 .add {
     text-decoration: none;
     font-size: 40px;
-    background-color:#4CAF50;
+    background-color:#2b7a78;
     color: white;
     display: inline-block;
     width: 50px;
@@ -53,6 +54,7 @@ input[type=submit] {
     text-align: center;
     margin-left: 20px;
     margin-right: 100px;
+    border-radius: 10px;
 }
 
 .create {
