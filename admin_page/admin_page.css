@@ -36,16 +36,18 @@ input[type=submit] {
 
 .delete {
     background-color: red; /* red */
+    border-radius: 10px;
 }
 
 .edit {
-    background-color: #4CAF50; /* Green */
+    background-color: #2b7a78; /* Green */
+    border-radius: 10px;
 }
 
 .add {
     text-decoration: none;
     font-size: 40px;
-    background-color:#4CAF50;
+    background-color:#2b7a78;
     color: white;
     display: inline-block;
     width: 50px;
@@ -53,6 +55,7 @@ input[type=submit] {
     text-align: center;
     margin-left: 20px;
     margin-right: 100px;
+    border-radius: 10px;
 }
 
 .create {

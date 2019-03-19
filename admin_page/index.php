@@ -28,7 +28,6 @@ foreach ($projects as $project) {
 <td><input type="submit" value="Delete" class="delete"></td>
 </tr>';
 };
-
 ?>
 </table>
 
