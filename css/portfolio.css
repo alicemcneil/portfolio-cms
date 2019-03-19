@@ -425,7 +425,7 @@ h3 + p {
     .image-container {
         margin: auto;
     }
-    .image1, .image2 {
+    .image-primary, .image-secondary {
         float: none;
         width: auto;
         margin: 10px;
