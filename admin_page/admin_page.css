@@ -37,10 +37,12 @@ input[type=submit] {
 
 .delete {
     background-color: red; /* red */
+    border-radius: 10px;
 }
 
 .edit {
     background-color: #2b7a78; /* Green */
+    border-radius: 10px;
 }
 
 .add {

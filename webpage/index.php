@@ -68,12 +68,13 @@ $results = $query->fetchAll();
        <?php
         foreach ($results as $result) {
             if ($result['id'] == 1 ) {
-                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image-primary">';
+                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image1">';
             } else {
-                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image-secondary">';
+                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image2">';
             }
         }
       ?>
+
 
        </div>
         
