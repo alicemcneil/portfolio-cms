@@ -19,13 +19,14 @@ echo '<h1>Admin Panel</h1>
         <th>Site URL</th>
     </tr>';
 
+
 foreach ($projects as $project) {
     echo '<tr><td>' . $project['id'] . '</td>
 <td>' . $project['project_title'] . '</td>
 <td>' . $project['img_url'] . '</td>
 <td>' . $project['site_url'] . '</td>
-<td><a href="../edit/edit.php"><input type="submit" value="Edit" class="edit"></a></td>
-<td><input type="submit" value="Delete" class="delete"></td>
+<td><a class="button edit" href="../edit/edit.php?id=' . $project['id'] .'">Edit</a></td>
+<td><a class="button delete" href="../edit/edit.php?id=' . $project['id'] .'">Delete</a></td>
 </tr>';
 };
 echo '</table>';

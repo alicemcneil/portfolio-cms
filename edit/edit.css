@@ -9,6 +9,10 @@ h1 {
     padding: 30px;
     text-align: center;
 }
+input[type=text] {
+    border: solid black 1px;
+    padding: 15px 180px;
+}
 input[type=submit] {
     border: none;
     color: white;
