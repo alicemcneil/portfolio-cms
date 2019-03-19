@@ -11,6 +11,7 @@ $query->execute();
 $projects = $query->fetchAll();
 
 echo '<h1>Admin Panel</h1>
+<a href="#" class="add">+</a>
 <table>
     <tr>
         <th>Number</th>
@@ -31,4 +32,5 @@ foreach ($projects as $project) {
 
 ?>
 </table>
+
 
