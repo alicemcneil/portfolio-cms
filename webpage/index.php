@@ -6,7 +6,6 @@ $getImg = 'SELECT `img_url` , `id` FROM `projects`;';
 $query = $db->prepare($getImg);
 $query->execute();
 
-$getImg = array();
 
 $results = $query->fetchAll();
 
@@ -65,18 +64,17 @@ $results = $query->fetchAll();
 
         <div class="image-container">
 
-        <?php
-        $projects = [];
-        echo '<img src="' . $result['img_url'] . '" alt="project image"  class="';
+
+       <?php
         foreach ($results as $result) {
-            if ($result['id'] == 1 || $result['id'] % 3 ) {
-                echo 'image1';
+            if ($result['id'] == 1 ) {
+                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image1">';
             } else {
-                echo 'image2';
+                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image2">';
             }
         }
-        echo '">';
       ?>
+
 
        </div>
         
