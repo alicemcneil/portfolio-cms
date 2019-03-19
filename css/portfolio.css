@@ -1,7 +1,7 @@
 /*    GENERAL    */
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -168,6 +168,7 @@ h3 + p {
 
 .my-work {
     text-align: center;
+    margin-top: 100px;
 }
 
 
@@ -177,12 +178,9 @@ h3 + p {
     padding: 30px 65px;
     letter-spacing: 5px;
     font-size: 1.5rem;
-    margin-bottom: 0;
 }
 
 /*    BACKGROUND BOXES     */
-
-
 .image-container {
     height: 700px;
     z-index: 10;
@@ -220,10 +218,6 @@ h3 + p {
 
 
 /*  CONTACT SECTION  */
-
-.contact-link {
-
-}
 
 .contact-section {
     display: block;
@@ -317,8 +311,8 @@ h3 + p {
         width: 93%;
         font-size: 0.9rem;
     }
-    .my-work {
-        margin-top: 150px;
+    .top-section {
+        margin-bottom: 400px;
     }
     .social-media {
         margin-bottom: 200px;
@@ -330,8 +324,6 @@ h3 + p {
         margin-top: -500px;
     }
 }
-
-
 
 @media only screen and (max-width: 1300px) {
     .logo .square {
@@ -365,7 +357,6 @@ h3 + p {
        border-bottom: 400px solid #2b7a78;
         top: 2200px;
     }
-
 }
 
 
