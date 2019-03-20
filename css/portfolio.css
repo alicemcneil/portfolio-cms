@@ -169,7 +169,6 @@ h3 + p {
 .my-work {
     margin-top: 100px;
     text-align: center;
-    margin-top: 100px;
 }
 
 
@@ -415,11 +414,8 @@ h3 + p {
     .image-container {
         margin: auto;
     }
-<<<<<<< HEAD
-    .image1, .image2 {
-=======
+
     .image-primary, .images {
->>>>>>> edit_project
         float: none;
         width: auto;
         margin: 10px;
