@@ -4,7 +4,7 @@ $db-> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 echo '<html lang="en"></html> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="admin_page.css">';
 
-$getProjects = 'SELECT `id`, `project_title`, `img_url`, `site_url` FROM projects';
+$getProjects = 'SELECT `id`, `project_title`, `img_url`, `site_url` FROM projects;';
 $query = $db->prepare($getProjects);
 $query->execute();
 
@@ -26,7 +26,7 @@ foreach ($projects as $project) {
 <td>' . $project['img_url'] . '</td>
 <td>' . $project['site_url'] . '</td>
 <td><a class="button edit" href="../edit/edit.php?id=' . $project['id'] .'">Edit</a></td>
-<td><a class="button delete" href="../edit/edit.php?id=' . $project['id'] .'">Delete</a></td>
+<td><a class="button delete" href="..delete/delete.php?id=' . $project['id'] .'">Delete</a></td>
 </tr>';
 };
 echo '</table>';

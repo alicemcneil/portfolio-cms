@@ -37,26 +37,9 @@ th {
 
 .delete {
     background-color: red; /* red */
+    display: none;
 }
 
 .edit {
     background-color: #2b7a78; /* Green */
-}
-
-.add {
-    text-decoration: none;
-    font-size: 40px;
-    background-color:#2b7a78;
-    color: white;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 100px;
-    border-radius: 10px;
-}
-
-.create {
-    text-align: right;
 }
