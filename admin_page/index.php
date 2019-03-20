@@ -26,7 +26,7 @@ foreach ($projects as $project) {
 <td>' . $project['img_url'] . '</td>
 <td>' . $project['site_url'] . '</td>
 <td><a class="button edit" href="../edit/edit.php?id=' . $project['id'] .'">Edit</a></td>
-<td><a class="button delete" href="..delete/delete.php?id=' . $project['id'] .'">Delete</a></td>
+<td><a class="button delete" href="../delete/delete.php?id=' . $project['id'] .'">Delete</a></td>
 </tr>';
 };
 echo '</table>';
