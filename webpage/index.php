@@ -70,7 +70,7 @@ $results = $query->fetchAll();
             if ($result['id'] == 1 ) {
                 echo '<img src="' . $result['img_url'] . '" alt="project image" class="image-primary">';
             } else {
-                echo '<img src="' . $result['img_url'] . '" alt="project image" class="image-secondary">';
+                echo '<img src="' . $result['img_url'] . '" alt="project image" class="images">';
             }
         }
       ?>

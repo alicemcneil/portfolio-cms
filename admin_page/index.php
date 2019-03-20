@@ -11,7 +11,7 @@ $query->execute();
 $projects = $query->fetchAll();
 
 echo '<h1>Admin Panel</h1>
-<div class="create">Create New<a href="../add_new/add_project_page.php" class="add">+</a></div><table>
+<div class="create"><p>Create New Project</p><a href="../add_new/add_project_page.php" class="add button">+</a></div><table>
     <tr>
         <th>Number</th>
         <th>Project Title</th> 
