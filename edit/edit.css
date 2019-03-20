@@ -1,18 +1,22 @@
 * {
     font-family: "Roboto Condensed", sans-serif;
-    text-align: center;
     letter-spacing: 1px;
     box-sizing: border-box;
 }
-h1 {
-    font-size: 50px;
-    padding: 30px;
+form {
     text-align: center;
 }
-input[type=text] {
+h1 {
+    font-size: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+.box {
     border: solid black 1px;
     width: 40%;
     height: 6%;
+    font-size: 20px;
+    text-align: center;
 }
 .button {
     border: none;
@@ -24,11 +28,23 @@ input[type=text] {
     font-size: 16px;
     background-color: #2b7a78; /* Green */
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 h3 {
     font-size: 25px;
     padding-bottom: 10px;
+}
+p {
+    font-size: 15px;
+    border: none;
+    color: #2b7a78;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #90d8cd;
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 30px;
 }
 .back {
     margin-right: 30px;

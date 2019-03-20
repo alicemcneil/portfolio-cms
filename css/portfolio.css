@@ -167,6 +167,7 @@ h3 + p {
 /*   MY WORK SECTION   */
 
 .my-work {
+    margin-top: 100px;
     text-align: center;
     margin-top: 100px;
 }
@@ -186,30 +187,31 @@ h3 + p {
     z-index: 10;
     filter: grayscale(100%); /*check this for browser support (webkit?)*/
     text-align: center;
+    padding-bottom: 100px;
 }
 
-.image1 {
+.image-primary {
     height: 100%;
     width: 50%;
     float: left;
     padding: 10px;
 }
 
-.image2 {
+.images {
     height: 50%;
     width: 50%;
     float: left;
     padding: 10px;
 }
 
-.image1:hover {
+.image-primary:hover {
     /*-webkit-transform: scale(1.3);*/
     /*-ms-transform: scale(1.3);*/
     transform: scale(1.3);
     transition: 1s;
 }
 
-.image2:hover {
+.images:hover {
     /*-webkit-transform: scale(1.3);*/
     /*-ms-transform: scale(1.3);*/
     transform: scale(1.3);
@@ -413,7 +415,11 @@ h3 + p {
     .image-container {
         margin: auto;
     }
+<<<<<<< HEAD
     .image1, .image2 {
+=======
+    .image-primary, .images {
+>>>>>>> edit_project
         float: none;
         width: auto;
         margin: 10px;

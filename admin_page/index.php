@@ -4,14 +4,14 @@ $db-> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 echo '<html lang="en"></html> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="admin_page.css">';
 
-$getProjects = 'SELECT `id`, `project_title`, `img_url`, `site_url` FROM projects';
+$getProjects = 'SELECT `id`, `project_title`, `img_url`, `site_url` FROM projects;';
 $query = $db->prepare($getProjects);
 $query->execute();
 
 $projects = $query->fetchAll();
 
 echo '<h1>Admin Panel</h1>
-<div class="create">Create New<a href="../add_new/add_project_page.php" class="add">+</a></div><table>
+<div class="create"><p>Create New Project</p><a href="../add_new/add_project_page.php" class="add button">+</a></div><table>
     <tr>
         <th>Number</th>
         <th>Project Title</th> 
@@ -19,13 +19,14 @@ echo '<h1>Admin Panel</h1>
         <th>Site URL</th>
     </tr>';
 
+
 foreach ($projects as $project) {
     echo '<tr><td>' . $project['id'] . '</td>
 <td>' . $project['project_title'] . '</td>
 <td>' . $project['img_url'] . '</td>
 <td>' . $project['site_url'] . '</td>
-<td><a href="../edit/edit.php"><input type="submit" value="Edit" class="edit"></a></td>
-<td><input type="submit" value="Delete" class="delete"></td>
+<td><a class="button edit" href="../edit/edit.php?id=' . $project['id'] .'">Edit</a></td>
+<td><a class="button delete" href="..delete/delete.php?id=' . $project['id'] .'">Delete</a></td>
 </tr>';
 };
 echo '</table>';
