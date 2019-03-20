@@ -16,3 +16,4 @@ $query->bindParam(':site', $site_url, PDO::PARAM_STR);
 
 $query->execute();
 
+echo 'Your new project has been successfully uploaded!';
