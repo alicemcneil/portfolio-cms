@@ -10,7 +10,6 @@ if (!empty ([$_GET['id']])) {
 } else {
     echo 'ERROR :( Unable to fetch project data, missing ?id= value';
 }
-
 ?>
 
 <html lang="en"></html><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">

@@ -20,7 +20,6 @@ if (!empty($_POST['project_title']) && (!empty($_POST['img_url']))) {
     } else {
         echo '<h1>Sorry!</h1> We were unable to upload this project <br> Ensure you have both the Project Title and Image URL fields completed <br>';
     }
-
     echo '<a class="button back" href="../admin_page/index.php">Back to Admin Panel</a>';
 
 
