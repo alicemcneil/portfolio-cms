@@ -12,7 +12,6 @@
     <input type="password" name="password" class="box">
     <input type="submit" value="Login" class="button">
 </form>
-</body>
 
 <?php
 if (!empty($_GET['loggedIn'])) {
@@ -20,3 +19,6 @@ if (!empty($_GET['loggedIn'])) {
 } elseif (empty($_GET['loggedIn'])) {
     echo '<h3>Please enter your username and password</h3>';
 }
+?>
+
+</body>
