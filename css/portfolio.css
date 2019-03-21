@@ -78,8 +78,6 @@ a:hover {
     width: 250px;
 }
 
-
-
 /*   NAVBAR   */
 
 .navbar {
@@ -356,8 +354,7 @@ h3 + p {
     .bottom-triangle {
        border-left: 800px solid transparent;
        border-bottom: 400px solid #2b7a78;
-        top: 2200px;
-    }
+        }
 }
 
 

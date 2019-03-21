@@ -16,7 +16,7 @@ if (!empty($_POST['project_title']) && (!empty($_POST['img_url']))) {
         $query = $db->prepare($updateProject);
 
         $query->execute([$project_title, $img_url, $site_url, $id]);
-        echo '<h1>Your new project was successfully updated!</h1>';
+        echo '<h1>Your Portfolio was successfully updated!</h1>';
     } else {
         echo '<h1>Sorry!</h1> We were unable to upload this project <br> Ensure you have both the Project Title and Image URL fields completed <br>';
     }
