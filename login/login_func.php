@@ -9,10 +9,10 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $_SESSION['loggedIn'] = true;
         header('Location: ../admin_page/index.php');
     } else {
-        header('Location: login_form.php?loggedIn=false');
+        header('Location: ../login_form.php?loggedIn=false');
     }
 } else {
-    header('Location: login_form.php');
+    header('Location: ../login_form.php');
 }
 
 

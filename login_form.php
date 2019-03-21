@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="login/login.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-<form method="POST" action="login_func.php">
+<form method="POST" action="login/login_func.php">
     <h1>Log in</h1>
     <h3>Username:</h3>
     <input type="text" name="username" class="box">
