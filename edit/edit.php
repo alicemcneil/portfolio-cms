@@ -12,7 +12,7 @@ if (!empty ([$_GET['id']])) {
     echo 'ERROR :( Unable to fetch project data, missing ?id= value';
 }
 ?>
-<html lang="en"></html><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<html lang="en"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="edit.css">
 <form class="upload" action="update.php" method="post">
 <input type="hidden" name="id" value="<?php echo $project['id']; ?>">
@@ -24,4 +24,4 @@ if (!empty ([$_GET['id']])) {
 <a class="button back" href="../admin_page/index.php">Back to Admin Panel</a>
 <input class="button" type="submit" value="Update Portfolio">
 </form>;
-
+</html>
