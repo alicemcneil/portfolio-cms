@@ -13,7 +13,7 @@ if (!empty($_GET['login']))
     <input type="text" name="username" class="box">
     <h3>Password:</h3>
     <input type="password" name="password" class="box">
-    <input type="submit" value="login" class="button">
+    <input type="submit" value="Login" class="button">
 </form>
 
 
