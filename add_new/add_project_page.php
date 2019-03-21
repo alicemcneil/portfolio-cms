@@ -3,10 +3,8 @@ require '../login/sessions.php';
 sessionCheck();
 $db = new PDO('mysql:host=192.168.20.20;dbname=cms_portfolio', 'root', '');
 $db-> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
 echo '<html lang="en"></html> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="add_proj.css">
-
 <form class="upload" action="upload.php" method="post">
 <h1>Create new Project</h1>
 <h3>Project Name: </h3><input type="text" name="project_title">
