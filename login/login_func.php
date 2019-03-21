@@ -1,6 +1,6 @@
 <?php
 define('USERNAME', 'alice');
-define('PASSWORD', '$2y$10$onfrLvU36ruTZDvRxUPX5eLDkI.bXZJYsaDfiF.mQL7MZfj6zgTXK'); //pw: 1234
+define('PASSWORD', '$2y$10$onfrLvU36ruTZDvRxUPX5eLDkI.bXZJYsaDfiF.mQL7MZfj6zgTXK');
 if (!empty($_POST['username']) && !empty($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
