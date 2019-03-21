@@ -17,5 +17,5 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
     }
 
 } else {
-    echo 'Correct username or password not provided';
+    echo 'Incorrect username or password';
 }
