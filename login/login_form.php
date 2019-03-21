@@ -1,10 +1,5 @@
-<?php
-//
-//if (!empty($_GET['login']))
-//{
-//    echo '<p>Username or password is incorrect!</p>';
-//}
-//?>
+
+
 
 <link rel="stylesheet" type="text/css" href="login.css"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
@@ -20,4 +15,6 @@
 <?php
 if (!empty($_GET['loggedIn'])) {
     echo '<h3>Incorrect username or password</h3>';
+} elseif (empty($_GET['loggedIn'])) {
+    echo '<h3>Please enter your username and password</h3>';
 }
