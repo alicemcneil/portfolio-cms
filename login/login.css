@@ -13,8 +13,8 @@ h1 {
 .box {
     border: solid black 1px;
     width: 40%;
-    height: 6%;
-    font-size: 20px;
+    height: 35px;
+    font-size: 16px;
     text-align: center;
 }
 .button {

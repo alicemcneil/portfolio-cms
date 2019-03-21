@@ -1,4 +1,4 @@
-!DOCTYPE html
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="login/login.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">

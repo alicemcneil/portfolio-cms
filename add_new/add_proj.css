@@ -12,7 +12,8 @@ h1 {
 input[type=text] {
     border: solid black 1px;
     width: 40%;
-    height: 6%;
+    height: 35px;
+    font-size: 16px;
 }
 .button {
     border: none;
