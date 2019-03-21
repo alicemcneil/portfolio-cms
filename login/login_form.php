@@ -1,12 +1,13 @@
 <?php
-
-if (!empty($_GET['login']))
-{
-    echo '<p>Username or password is incorrect!</p>';
-}
-?>
+//
+//if (!empty($_GET['login']))
+//{
+//    echo '<p>Username or password is incorrect!</p>';
+//}
+//?>
 
 <link rel="stylesheet" type="text/css" href="login.css"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
 <form method="POST" action="login_func.php">
     <h1>Log in</h1>
     <h3>Username:</h3>
@@ -16,4 +17,7 @@ if (!empty($_GET['login']))
     <input type="submit" value="Login" class="button">
 </form>
 
-
+<?php
+if (!empty($_GET['loggedIn'])) {
+    echo '<h3>Incorrect username or password</h3>';
+}
