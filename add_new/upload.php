@@ -16,9 +16,9 @@ if (!empty($_POST['project_title']) && (!empty($_POST['img_url']))) {
     $query->bindParam(':site', $site_url, PDO::PARAM_STR);
 
     $query->execute();
-    echo '<h1>Your new project was successfully uploaded!</h1>';
+    echo '<br><h3>Your new project was successfully uploaded!</h3>';
 } else {
-    echo '<h1>Sorry!</h1> We were unable to upload this project <br> Ensure you have both the Project Title and Image URL fields completed <br>';
+    echo '<br><h3>Sorry!</h3> We were unable to upload this project <br> Ensure you have both the Project Title and Image URL fields completed <br>';
 }
 
 echo '<a class="button back" href="../admin_page/index.php">Back to Admin Panel</a>';

@@ -9,10 +9,10 @@ if (!empty($_GET['id'])) {
     $query = $db->prepare($deleteProject);
     $query->execute([$_GET['id']]);
     $project = $query->fetch();
-    echo '<h1>This project has been deleted from the Database</h1>
+    echo '<br><h3>This project has been deleted from the Database</h3>
     <a class="button back" href="../admin_page/index.php">Back to Admin Panel</a>';
 } else {
-    echo '<h1>Unable to delete this project</h1><h3>Please check the details of this project in the database</h3>
+    echo '<br><h3>Unable to delete this project</h3><h3>Please check the details of this project in the database</h3>
     <a class="button back" href="../admin_page/index.php">Back to Admin Panel</a>';
 }
 ?>
