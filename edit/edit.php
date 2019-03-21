@@ -15,8 +15,6 @@ if (!empty ([$_GET['id']])) {
 
 <html lang="en"></html><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="edit.css">
-
-
 <form class="upload" action="update.php" method="post">
 <input type="hidden" name="id" value="<?php echo $project['id']; ?>">
 <h1>Edit your Project</h1>
